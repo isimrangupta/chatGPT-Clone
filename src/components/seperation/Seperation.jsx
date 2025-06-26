@@ -2,8 +2,7 @@ import './Seperation.css'
 
 const Seperation = () => {
   return (
-    <div className='seperation'>
-      
+    <div className='seperation'>  
     </div>
   )
 }
