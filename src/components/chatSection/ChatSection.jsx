@@ -1,5 +1,5 @@
 import { IoMdSend } from "react-icons/io";
-import "./chatSection.css";
+import "./ChatSection.css";
 import Darkmode from "../Darkmode/Darkmode";
 import { useContext } from "react";
 import { dataContext } from "../../context/UserContext";
