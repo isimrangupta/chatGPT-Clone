@@ -194,7 +194,7 @@
 /* Copy icon itself */
 .copy-icon {
   font-size: 20px;
-  color: #ccc;
+  color: var(--color);
   cursor: pointer;
   transition: color 0.3s ease;
 }
