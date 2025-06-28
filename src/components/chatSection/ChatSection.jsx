@@ -5,8 +5,9 @@ import { useContext } from "react";
 import { dataContext } from "../../context/UserContext";
 import user from "../../assets/user.png";
 import ai from "../../assets/ai.png";
+import { FaRegCopy } from "react-icons/fa";
 
-const ChatSection = ({userName}) => {
+const ChatSection = ({ userName }) => {
   let { sent, input, setInput, showResult, resultData, recentPrompt, loading } =
     useContext(dataContext);
   return (
@@ -35,7 +36,16 @@ const ChatSection = ({userName}) => {
                     <hr />
                   </div>
                 ) : (
-                  <p>{resultData}</p>
+                  <div className="copy-wrapper">
+                  <p className="response-text ">{resultData}</p>
+                 <div className="copy-icon-box">
+                   <FaRegCopy  className="copy-icon" onClick={() =>{
+                    navigator.clipboard.writeText(resultData);
+                    alert('Copied to clipboard');
+                  }} title="Copy to Clipboard"
+                  />
+                 </div>
+                  </div>
                 )}
               </div>
             </div>

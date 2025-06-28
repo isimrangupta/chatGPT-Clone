@@ -169,3 +169,38 @@
     padding: 10px;
   }
 }
+
+
+
+
+.copy-wrapper {
+ display: flex;
+ gap: 10px;
+
+}
+
+/* Answer text */
+.response-text {
+  width: 100%;
+  color: var(--color);
+}
+
+/* Icon container */
+.copy-icon-box {
+  display: flex;
+ margin-top: 6px;
+}
+
+/* Copy icon itself */
+.copy-icon {
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.copy-icon:hover {
+  color: #6c6868;
+}
+
+
