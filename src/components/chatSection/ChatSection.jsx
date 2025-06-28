@@ -6,7 +6,7 @@ import { dataContext } from "../../context/UserContext";
 import user from "../../assets/user.png";
 import ai from "../../assets/ai.png";
 
-const ChatSection = () => {
+const ChatSection = ({userName}) => {
   let { sent, input, setInput, showResult, resultData, recentPrompt, loading } =
     useContext(dataContext);
   return (
@@ -15,7 +15,7 @@ const ChatSection = () => {
         <div className="topsection">
           {!showResult ? (
             <div className="headings">
-              <span>Hello Diksha,</span>
+              <span>Hello {userName},</span>
               <span>I'm your Own Assistant</span>
               <span>What can I help you... ?</span>
             </div>
